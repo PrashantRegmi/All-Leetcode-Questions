@@ -1,6 +1,3 @@
-/**
- * Author: Phuong Lam
- */
 
 /**
  * @param {number} length
