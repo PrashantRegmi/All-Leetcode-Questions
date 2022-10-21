@@ -1,7 +1,6 @@
 # Time:  O(m * n)
 # Space: O(1)
 
-# dp solution
 class Solution(object):
     def updateMatrix(self, matrix):
         """
