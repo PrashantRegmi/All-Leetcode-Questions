@@ -3,14 +3,15 @@
 
 class Solution {
 public:
-    bool find132pattern(vector<int>& nums) {
+    bool newpattern(vector<int>&nums) {
         int ak = numeric_limits<int>::min();
         stack<int> st;
         for (int i = nums.size() - 1; i >= 0; --i) {
             if (nums[i] < ak) {
                 return true;
-            } else {
-                while (!st.empty() && nums[i] > st.top()) {
+            }
+            else {
+                while(!st.empty() && nums[i] > st.top()) {
                     ak = st.top(), st.pop(); 
                 }
             }
